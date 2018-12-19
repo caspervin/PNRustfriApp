@@ -9,7 +9,6 @@ target 'PNRustfriApp' do
 	pod 'Alamofire'
 	pod 'Firebase/Core'
         pod 'Firebase/Auth'
-	pod 'JTAppleCalendar'
 
   target 'PNRustfriAppTests' do
     inherit! :search_paths
