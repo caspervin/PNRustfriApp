@@ -54,6 +54,7 @@ PODS:
   - GoogleUtilities/UserDefaults (5.3.6):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.1)
+  - JTAppleCalendar (7.1.6)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -64,6 +65,7 @@ DEPENDENCIES:
   - Alamofire
   - Firebase/Auth
   - Firebase/Core
+  - JTAppleCalendar
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -77,6 +79,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
+    - JTAppleCalendar
     - nanopb
 
 SPEC CHECKSUMS:
@@ -90,8 +93,9 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
   GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: c0e04047dd8c9e943cabaabd96df020fc44d8ad1
+PODFILE CHECKSUM: d1d129bce0f2e6eb97c45fedd2c10566d2c57344
 
 COCOAPODS: 1.5.3

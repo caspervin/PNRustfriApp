@@ -19,6 +19,8 @@
 		A7902C3F21C17142005D2657 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7902C3E21C17142005D2657 /* GoogleService-Info.plist */; };
 		A7902C4121C1748A005D2657 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7902C4021C1748A005D2657 /* LoginViewController.swift */; };
 		A7902C4321C17711005D2657 /* ArbejdsopgaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7902C4221C17711005D2657 /* ArbejdsopgaveViewController.swift */; };
+		C15E26A421D7BB550096E23C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E26A321D7BB550096E23C /* CustomCell.swift */; };
+		C15E26A621D7BC600096E23C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E26A521D7BC600096E23C /* CalendarViewController.swift */; };
 		F5B4DD10B0C2FCDA9A7EA98E /* Pods_PNRustfriAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B635357DEFD7210BC45B206 /* Pods_PNRustfriAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		A7902C3E21C17142005D2657 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A7902C4021C1748A005D2657 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A7902C4221C17711005D2657 /* ArbejdsopgaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbejdsopgaveViewController.swift; sourceTree = "<group>"; };
+		C15E26A321D7BB550096E23C /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C15E26A521D7BC600096E23C /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DB7B732A8487F9FC5DF2BCD2 /* Pods-PNRustfriApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNRustfriApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNRustfriApp/Pods-PNRustfriApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DC021F9DDF7B9090DF4AD567 /* Pods_PNRustfriApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNRustfriApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,6 +156,8 @@
 				A7902C4021C1748A005D2657 /* LoginViewController.swift */,
 				A7902C4221C17711005D2657 /* ArbejdsopgaveViewController.swift */,
 				A72011BB21CAAF1D00AA87C4 /* AdminCreateUserViewController.swift */,
+				C15E26A321D7BB550096E23C /* CustomCell.swift */,
+				C15E26A521D7BC600096E23C /* CalendarViewController.swift */,
 			);
 			path = PNRustfriApp;
 			sourceTree = "<group>";
@@ -311,15 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PNRustfriAppTests-checkManifestLockResult.txt",
 			);
@@ -333,15 +335,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PNRustfriAppUITests-checkManifestLockResult.txt",
 			);
@@ -355,22 +353,20 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PNRustfriApp/Pods-PNRustfriApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,15 +379,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PNRustfriApp-checkManifestLockResult.txt",
 			);
@@ -407,8 +399,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15E26A621D7BC600096E23C /* CalendarViewController.swift in Sources */,
 				A7902C4321C17711005D2657 /* ArbejdsopgaveViewController.swift in Sources */,
 				A72011BC21CAAF1D00AA87C4 /* AdminCreateUserViewController.swift in Sources */,
+				C15E26A421D7BB550096E23C /* CustomCell.swift in Sources */,
 				A7902C4121C1748A005D2657 /* LoginViewController.swift in Sources */,
 				A7902C0D21C162A6005D2657 /* AppDelegate.swift in Sources */,
 			);
