@@ -75,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekd-ET-qNO">
-                                <rect key="frame" x="111" y="210" width="153" height="30"/>
+                                <rect key="frame" x="111" y="167" width="153" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -100,6 +100,13 @@
                                     <action selector="OpretBrugerButton:" destination="0Yk-Fn-5Zh" eventType="touchUpInside" id="JO1-3e-WlT"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brugernavn" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAH-4n-XeD">
+                                <rect key="frame" x="111" y="227" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pXx-X6-PhP"/>
@@ -107,6 +114,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="ekd-ET-qNO" id="xDO-rf-ckH"/>
                         <outlet property="passwordTextfield" destination="PJC-SQ-8qy" id="zeP-sV-Ayc"/>
+                        <outlet property="usernameTextfield" destination="mAH-4n-XeD" id="vlj-52-g6V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8nt-Qs-Qcm" userLabel="First Responder" sceneMemberID="firstResponder"/>

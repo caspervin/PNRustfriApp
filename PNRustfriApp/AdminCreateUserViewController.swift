@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import Alamofire
 
 class AdminCreateUserViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class AdminCreateUserViewController: UIViewController {
     
     @IBOutlet weak var passwordTextfield: UITextField!
     
+    @IBOutlet weak var usernameTextfield: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,13 @@ class AdminCreateUserViewController: UIViewController {
             if error != nil {
                 print("Signup failed")
             }        }
-        
+        let url = "http://hoursregisteringrestservice.azurewebsites.net/Service1.svc/user"
+        let param : Parameters = ["Email": emailTextfield.text!,
+                                  "Username": usernameTextfield.text!,
+                                  "status": "0"]
+        Alamofire.request(url, method: .post, parameters: param, encoding: JSONEncoding.default).responseString { response in
+            print(response)
+        }
     }
     
     /*
